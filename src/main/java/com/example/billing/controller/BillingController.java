@@ -29,4 +29,8 @@ public class BillingController {
 	public Object getProductById(@RequestParam int id) {
 		return billingService.getProductById(id);
 	}
+	@GetMapping("get-customer")
+	public Object getCustomers() {
+		return billingService.getCustomers();
+	}
 }
